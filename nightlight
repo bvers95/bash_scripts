@@ -1,5 +1,7 @@
 #!/bin/sh
 
+# shell script to conveniently switch night light mode on/off
+
 
 nightlight=$(gsettings get org.gnome.settings-daemon.plugins.color night-light-enabled)
 
@@ -7,10 +9,10 @@ nightlight=$(gsettings get org.gnome.settings-daemon.plugins.color night-light-e
 if [ $nightlight = true ]
 then
   gsettings set org.gnome.settings-daemon.plugins.color night-light-enabled false
-  echo 'Night Light has been disabled'
+  echo ' - Night Light has been disabled'
 
 else
   gsettings set org.gnome.settings-daemon.plugins.color night-light-enabled true
-  echo 'Night Light has been enabled'
+  echo ' - Night Light has been enabled'
 
 fi
