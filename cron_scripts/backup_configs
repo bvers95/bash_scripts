@@ -1,0 +1,14 @@
+#!/bin/sh
+
+# Simple shell script to update personal config files in local repository
+
+cd /home/configs
+cp --update /home/borisv/.bash_aliases ./.bash_aliases
+cp --update /home/borisv/.bashrc ./.bashrc
+cp --update /home/borisv/.vimrc ./.vimrc
+
+
+git add --all
+git commit -m "Another automatic configs backup"
+
+# Add method to automate push to remote...
