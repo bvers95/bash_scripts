@@ -11,7 +11,9 @@ cp --update /home/borisv/.vimrc ./.vimrc
 git add --all
 git commit -m "Another automatic configs backup"
 
-echo "Automatic config repo update ran succesfully"
-echo "NB: local backup only! Push to remote has to happen manually"
+echo
+echo " - Automatic config repo update ran succesfully"
+echo " - NB: local backup only! Push to remote has to happen manually"
+echo
 
 # Add method to automate push to remote...
