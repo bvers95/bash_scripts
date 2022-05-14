@@ -6,14 +6,13 @@ cd /home/borisv/configs
 cp --update /home/borisv/.bash_aliases ./.bash_aliases
 cp --update /home/borisv/.bashrc ./.bashrc
 cp --update /home/borisv/.vimrc ./.vimrc
+cp --update --recursive /home/borisv/.vim/ ./.vim/
 
 
 git add --all
 git commit -m "Another automatic configs backup"
+git push
 
 echo
 echo " - Automatic config repo update ran succesfully"
-echo " - NB: local backup only! Push to remote has to happen manually"
 echo
-
-# Add method to automate push to remote...
